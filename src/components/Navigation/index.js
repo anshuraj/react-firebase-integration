@@ -15,7 +15,7 @@ const Navigation = ({ authUser }) => (
 );
 
 const NavigationAuth = () => (
-  <ul>
+  <ul className="nav">
     <li>
       <Link to={ROUTES.HOME}>Home</Link>
     </li>
@@ -32,7 +32,7 @@ const NavigationAuth = () => (
 );
 
 const NavigationNonAuth = () => (
-  <ul>
+  <ul className="nav">
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
     </li>

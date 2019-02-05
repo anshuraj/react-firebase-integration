@@ -13,7 +13,7 @@ const INITIAL_STATE = {
 };
 
 const SignUpPage = () => (
-  <div>
+  <div className="center">
     <h1>SignUp</h1>
       <SignUpForm />
   </div>

@@ -5,8 +5,8 @@ import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
 const PasswordForgetPage = () => (
-  <div>
-    <h1>PasswordForget</h1>
+  <div className="center">
+    <h1>Forgot your password? Reset</h1>
     <PasswordForgetForm />
   </div>
 );
@@ -43,13 +43,14 @@ class PasswordForgetFormBase extends Component {
     const { email, error } = this.state;
     const isInvalid = email === '';
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} style={{margin: '20px'}}>
         <input
           name="email"
           value={this.state.email}
           onChange={this.onChange}
           type="text"
           placeholder="Email Address"
+          style={{marginRight: '20px'}}
         />
       <button disabled={isInvalid} type="submit">
         Reset My Password
